@@ -93,7 +93,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>Shop-docker</finalName>
+		<finalName>shop-docker</finalName>
 	</build>
 
 </project>
