@@ -85,14 +85,7 @@ class MyTelstraApplicationTests {
 		assertThat(activeplan).hasSize(0);
 	}
 	
-	@Test
-	void testUserDetais() throws Exception{
-		UserInfo user = mobcontroller.getUserDetailsByID("10001");
-		assertEquals(null,user.getId());
-		assertEquals(null,user.getBalance());
-		assertEquals(null,user.getUsername());
-		assertEquals(null,user.getUsage());
-	}
+	
 	
 	@Test
 	void testRechargeHistory() throws Exception{

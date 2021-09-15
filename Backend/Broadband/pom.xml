@@ -87,6 +87,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+               <finalName>broadband-docker</finalName>
 	</build>
 
 </project>
