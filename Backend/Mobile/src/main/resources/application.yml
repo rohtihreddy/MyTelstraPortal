@@ -1,0 +1,7 @@
+server:
+  port: 8083
+spring:
+  data:
+    mongodb:
+      database: MyTelstra
+      uri: mongodb+srv://telstra:telstra@cluster0.oaptb.mongodb.net/MyTelstra?retryWrites=true&w=majority

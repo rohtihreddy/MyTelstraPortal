@@ -1,0 +1,34 @@
+server:
+  port: 8098
+
+spring:
+    security:
+      oauth2:
+        client:
+          registration:
+            google:
+              clientId: 334111533705-t7emln10c9rkv9q9mgo73m8qo8cgtbco.apps.googleusercontent.com
+              clientSecret: SR7DnTrE91N7mCsnXpcPTeav
+              redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+              scope:
+                - email
+                - profile
+    data:
+      mongodb:
+        uri: mongodb+srv://telstra:telstra@cluster0.oaptb.mongodb.net/MyTelstra?retryWrites=true&w=majority
+        database: MyTelstra
+
+
+app:
+  auth:
+    tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+    tokenExpirationMsec: 864000000
+  oauth2:
+    # After successfully authenticating with the OAuth2 Provider,
+    # we'll be generating an auth token for the user and sending the token to the
+    # redirectUri mentioned by the client in the /oauth2/authorize request.
+    # We're not using cookies because they won't work well in mobile clients.
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+      - myandroidapp://oauth2/redirect
+      - myiosapp://oauth2/redirect

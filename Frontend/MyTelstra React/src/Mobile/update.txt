@@ -1,0 +1,34 @@
+            import MobileCheckOut from 'Mobile/mobilePayment/checkout';
+import ViewMobilePlans from 'Mobile/viewPlans/viewPlans'
+import ViewTransactionHistory from 'Mobile/viewTransactionHistory/viewTransactionHistoy';
+import ViewActiveMobilePlans from 'Mobile/activePlans/viewActivePlans';
+import ViewUsageHistory from 'Mobile/viewUsageHistory/viewUsageHistory';
+
+
+
+<PrivateRouteNew exact path="/mobile" authenticated={this.state.authenticated} currentUser={this.state.currentUser}
+              component={(props) => <ViewMobileDashboard newPlan = {this.props.newPlan} {...props}/>}></PrivateRouteNew>
+
+            <Route exact path="/mobile/plans" authenticated={this.state.authenticated} currentUser={this.state.currentUser}
+              component={(props) => <ViewPlansChart authenticated={this.state.authenticated} {...props}/>}></Route>
+
+            <PrivateRouteNew exact path="/mobile/recharge" authenticated={this.state.authenticated} currentUser={this.state.currentUser}
+              component={(props) => <ViewMobilePlans authenticated={this.state.authenticated} {...props}/>}></PrivateRouteNew>
+
+            <PrivateRouteNew exact path="/mobile/activeplans" authenticated={this.state.authenticated} currentUser={this.state.currentUser}
+              component={(props) => <ViewActiveMobilePlans authenticated={this.state.authenticated} {...props}/>}></PrivateRouteNew>
+
+            <PrivateRouteNew exact path="/mobile/rechargehistory" authenticated={this.state.authenticated} currentUser={this.state.currentUser}
+              component={(props) => <ViewTransactionHistory authenticated={this.state.authenticated} {...props}/>}></PrivateRouteNew>
+
+            <PrivateRouteNew exact path="/mobile/usagehistory" authenticated={this.state.authenticated} currentUser={this.state.currentUser}
+              component={(props) => <ViewUsageHistory authenticated={this.state.authenticated} {...props}/>}></PrivateRouteNew>
+
+            <PrivateRouteNew exact path="/mobile/payment" authenticated={this.state.authenticated} currentUser={this.state.currentUser}
+              component={(props) => <MobileCheckOut newPlan = {this.props.newPlan} {...props}/>}></PrivateRouteNew>
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>

@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>Upload New Prod</h1>
+<form method="POST" action="http://localhost:8083/AddProd" enctype="multipart/form-data">
+    Pid:<input type="text" name="pid" /><br>
+    Category:<input type="text" name="category" /><br>
+    Name:<input type="text" name="name" /><br>
+    Price:<input type="number" name="price" /><br>
+    Details:<input type="details" name="details" /><br>
+    Image:<input type="file" name="image" accept="image/*" />
+    <input type="submit" value="Upload" />
+</form>
+</body>
+</html>
