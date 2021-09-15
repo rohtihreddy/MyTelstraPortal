@@ -85,7 +85,10 @@ class MyTelstraApplicationTests {
 		assertThat(activeplan).hasSize(0);
 	}
 	
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 1e0f54a86993ae611c9b4341139a388692d119b7
 	
 	@Test
 	void testRechargeHistory() throws Exception{
