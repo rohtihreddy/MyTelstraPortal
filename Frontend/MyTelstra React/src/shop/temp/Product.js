@@ -77,12 +77,12 @@ function Product(props) {
                         </Typography>
                         <Typography
                             color="textSecondary" component="p">
-                            {details}
+                           <span> {details} </span>
                         </Typography>
                         <Typography
-                            color="textSecondary" component="p">
+                            color="textSecondary" variant="" component="p" >
                             <span>Price:</span>
-                                RS. {price}.00
+                               <span>RS. {price}.00</span>
                         </Typography>
                         
                     </CardContent>

@@ -13,13 +13,10 @@ export default function ProductList(props) {
         <Grid
             zeroMinWidth
             item
-            // xs={12}
-            // sm={6}
-            // md={4}
-             lg={props.name === "mobiles" ? 6 : 12}
-             xl={props.name === "mobiles" ? 6 : 12}
+            lg={6}
+             xl={6}
             key={prod.id}
-            xs={12} sm={12} md={props.name === "mobiles" ? 8 : 12}
+            xs={12} sm={12} md={8}
             >
             <Product
                 id={prod.pid}
