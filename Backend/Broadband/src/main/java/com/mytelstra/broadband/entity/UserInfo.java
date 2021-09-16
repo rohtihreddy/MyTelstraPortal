@@ -18,7 +18,7 @@ public class UserInfo {
 		
 	}
 	
-	public UserInfo(String id, String username, List<RechargeInfo> planshistory, RechargeInfo activeplan,
+	public UserInfo(String id, List<RechargeInfo> planshistory, RechargeInfo activeplan,
 			double dataremaining, String broadbandId, boolean activePlanStatus, boolean upgradePlanStatus) {
 		super();
 		this.id = id;
