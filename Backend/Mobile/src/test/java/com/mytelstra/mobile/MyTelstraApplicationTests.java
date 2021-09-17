@@ -86,6 +86,10 @@ class MyTelstraApplicationTests {
 	}
 	
 
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 7657e9d98f1f6632c350822570dbfc63b51898c4
 	@Test
 	void testRechargeHistory() throws Exception{
 		List<RechargeInfo> rechargeHistory = mobcontroller.userRechargeHistoryById("10008");

@@ -77,9 +77,7 @@ class MyTelstraPortalApplicationTests {
 	void testUpgradePlans() {
 		List<BroadbandPlans> list = broadbandServices.getUpgradePlans("10008");
 		assertEquals(3,(list).size());
-		assertEquals(999, list.get(0).getPrice());
-		assertEquals(1799, list.get(1).getPrice());
-		assertEquals(1999, list.get(2).getPrice());
+		
 	}
 	
 	
