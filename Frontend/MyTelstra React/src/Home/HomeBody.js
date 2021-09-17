@@ -92,7 +92,7 @@ export default function HomeBody(props){
             className="page-header section-dark"
             style={{
               backgroundImage:
-                "url(" + require("assets/img/antoine-barres.jpg").default + ")",
+                "url(" + require("assets/img/bg.jpg").default + ")",
             }}
           >
             <div className="filter" />
@@ -101,18 +101,18 @@ export default function HomeBody(props){
                 <div className="title-brand">
                   <GetGreetings />
                   <h2 className="presentation-title">{userDetails.name}</h2>
-                  <div className="fog-low">
+                  {/* <div className="fog-low">
                     <img
                       alt="..."
                       src={require("assets/img/fog-low.png").default}
                     />
-                  </div>
-                  <div className="fog-low right">
+                  </div> */}
+                  {/* <div className="fog-low right">
                     <img
                       alt="..."
                       src={require("assets/img/fog-low.png").default}
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <Box m={1} p={1}></Box>
                 <Grid container direction="row" justifyContent="center" alignItems="center">
@@ -130,9 +130,6 @@ export default function HomeBody(props){
 
                     <CardFooter stats>
                     <div className={classes.stats}>
-                        {/* <a href="#pablo">
-                        Upgrade
-                        </a> */}
                     </div>
                     </CardFooter>
                 </Card>
@@ -158,13 +155,13 @@ export default function HomeBody(props){
                 </Grid>
               </Container>
             </div>
-            <div
+            {/* <div
               className="moving-clouds"
               style={{
                 backgroundImage:
                   "url(" + require("assets/img/clouds.png").default + ")",
               }}
-            />
+            /> */}
             
           </div>
         </>

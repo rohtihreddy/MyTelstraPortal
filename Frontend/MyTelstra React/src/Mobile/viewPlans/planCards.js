@@ -113,7 +113,7 @@ export default function Cardgrid(){
                                     {line}
                                 </Typography>
                                 ))} */}
-                                {plan.data === 0 ? <div/>:
+                                {/* {plan.data === 0 ? <div/>: */}
                                 <div className={classes.cardPricing}>
                                     <Typography component="h6" variant="h6" color="textPrimary">
                                     {" " + plan.data+" "}
@@ -121,8 +121,8 @@ export default function Cardgrid(){
                                     <Typography variant="subtitle2" color="textSecondary">
                                     GB of Data
                                     </Typography>
-                                </div>}
-                                {plan.voice === 0 ? <div/> :
+                                </div>
+                                {/* {plan.voice === 0 ? <div/> : */}
                                 <div className={classes.cardPricing}>
                                     <Typography component="h6" variant="h6" color="textPrimary">
                                     {" " + plan.voice+" "}
@@ -130,8 +130,8 @@ export default function Cardgrid(){
                                     <Typography variant="subtitle2" color="textSecondary">
                                     Minutes of Voice Calls
                                     </Typography>
-                                </div>}
-                                {plan.sms === 0? <div/> :
+                                </div>
+                                {/* {plan.sms === 0? <div/> : */}
                                 <div className={classes.cardPricing}>
                                     <Typography component="h6" variant="h6" color="textPrimary">
                                     {plan.sms}
@@ -140,7 +140,7 @@ export default function Cardgrid(){
                                     {" "}
                                     SMS
                                     </Typography>
-                                </div>}
+                                </div>
                                 {plan.duration === 0 ? 
                                 <div className={classes.cardPricing}>
                                 <Typography  color="textSecondary">

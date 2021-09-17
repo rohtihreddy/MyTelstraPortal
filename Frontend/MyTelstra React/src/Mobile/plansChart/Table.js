@@ -77,6 +77,7 @@ export default function Table(props){
                       data = {plans}
                       columns = {[
                         {title:'Plan Type', field:'plantype'},
+                        {title:'Plan Id', field: 'id'}, 
                         {title:'Plan Name', field:'plan'},
                         {title:'Price (Rs)', field:'price'},
                         {title:'Validity (Days)', field:'duration',

@@ -55,7 +55,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1 className="presentation-title">MyTelstra</h1>
+            <h1 className="presentation-title">TelStore</h1>
           
             <br />
             <div class="d-flex justify-content-sm-center mb-5">

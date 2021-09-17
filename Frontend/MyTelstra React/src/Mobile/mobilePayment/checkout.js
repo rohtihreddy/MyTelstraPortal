@@ -27,7 +27,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        MyTelstra
+        TelStore
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -117,21 +117,10 @@ export default function MobileCheckout(props) {
     }
 
     else{
-      setMessage("Recharege Failed : Invalid Card Details")
+      setMessage("Recharge Failed : Invalid Card Details")
     }
   }
   
-
-  // useEffect(() => {
-  //   if(send){
-  //     var userDetails = JSON.parse(localStorage.getItem(USER));
-  //     console.log("Hello");
-  //     axios.put("http://localhost:8083/recharge",{
-  //       userid: userDetails.id,
-  //       planid: products[0].id
-  //     }).then(function(response){rechargeResponse = response.data; console.log(rechargeResponse)});
-  //   }
-  // }, [send, products]);
   
   console.log("products")
   console.log(location.newPlan)
@@ -206,8 +195,14 @@ export default function MobileCheckout(props) {
                   {message=="Recharge Successful" ?
                   <img src={tick} alt="Success" width="50" height="50" />
                   :
-                    <img src={cross} alt="Success" width="50" height="50" />
+                   <div/> //
                   } 
+                  {message=="Recharge Failed : Invalid Card Details" ?
+                  <img src={cross} alt="Failure" width="50" height="50" />
+                  :
+                   <div/> 
+                  } 
+                  
                   </div>
                   <div align="center">
                   {message} !!!

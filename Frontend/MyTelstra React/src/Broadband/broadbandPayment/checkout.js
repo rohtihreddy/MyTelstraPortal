@@ -27,7 +27,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        MyTelstra
+        TelStore
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -218,8 +218,15 @@ useEffect(() =>{
                   {rechargeResponse=="Recharge Successfull" ?
                   <img src={tick} alt="Success" width="50" height="50" />
                   :
-                    <img src={cross} alt="Success" width="50" height="50" />
+                    <div/> //
                   } 
+
+                  {rechargeResponse=="Recharge Failed...Check card details" ?
+                  <img src={cross} alt="Failure" width="50" height="50" />
+                  :
+                   <div/> 
+                  } 
+
                   </div>
                   <div align="center">
                   {rechargeResponse}

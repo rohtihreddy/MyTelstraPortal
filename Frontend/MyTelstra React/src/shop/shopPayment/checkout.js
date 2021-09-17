@@ -27,7 +27,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        MyTelstra
+        TelStore
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -129,12 +129,7 @@ export default function ShopCheckout(props) {
         console.log(address.address);
         makeOrder(plans[i])
         setTimeout(makeOrder(plans[i]), 10000);
-        // axios.post("http://localhost:8085/AddToCart",{
-        //   id: userDetails.id,
-        //   pid: plans[i].id,
-        //   quantity:plans[i].quantity,
-        //   address: address.address
-        // }).then(function(response){setResponse(response.data); console.log(rechargeResponse)});
+       
       }
       localStorage.removeItem(CART);    }
     else{
@@ -222,8 +217,15 @@ export default function ShopCheckout(props) {
                   {rechargeResponse=="Order Placed" ?
                   <img src={tick} alt="Success" width="50" height="50" />
                   :
-                    <img src={cross} alt="Success" width="50" height="50" />
+                    <div/> //
                   } 
+                  
+                  {rechargeResponse=="Oops unable to place order...Check card details" ?
+                  <img src={cross} alt="Failure" width="50" height="50" />
+                  :
+                   <div/> 
+                  } 
+
                   </div>
                   <div align="center">
                   {rechargeResponse}

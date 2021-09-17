@@ -13,7 +13,8 @@ import {
 } from "reactstrap";
 import logo from 'Broadband/media/logo.png'
 import { Link } from 'react-router-dom';
-import { UserAuthenticated } from 'constants/index';
+import { UserAuthenticated} from 'constants/index';
+
 
 function DemoNavbar(props) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -63,9 +64,9 @@ function DemoNavbar(props) {
           <NavbarBrand
             data-placement="bottom"
             href="/home"
-            title="MyTelstra Home"
+            title="TelStore Home"
           ><img src={logo} className="logo" alt="logo"></img>
-            MyTelstra
+            TelStore
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -117,16 +118,19 @@ function DemoNavbar(props) {
               >Shop
               </NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>               
               <NavLink>
-              {localStorage.getItem(UserAuthenticated) ? (<Link
+              {localStorage.getItem(UserAuthenticated) ? 
+              (<Link
                 title="Cart"
-                to = {{pathname: '/Cart', authenticated: props.authenticated}}
+                to = {{pathname: '/Shop', authenticated: props.authenticated}}
               >
                 <i className="nc-icon nc-cart-simple" />
-              </Link>):(<div></div>) }
+              </Link>)
+             
+              :(<div></div>) }
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
                 <NavLink>
                 {localStorage.getItem(UserAuthenticated) ? (<Link

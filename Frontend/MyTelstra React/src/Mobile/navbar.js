@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import FadeMenu from './Menu.js'
+import FadeMenu from 'Broadband/Menu'; 
 import logo from 'Broadband/media/logo.png';
 import Cart from 'shop/temp/Cart'
 import {
